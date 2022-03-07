@@ -47,6 +47,6 @@ DB_PASSWORD=example
 ### Admin User to login
 
 Email: admin@test.se
-Password: admin1234'
+Password: admin1234
 
 ---
