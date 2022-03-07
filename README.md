@@ -6,7 +6,7 @@
 
 This is an imdb-clone where you can register a user, login with your username and use the website as you like. As a user you can add movies to your own watchlist to keep track of your favourite movies. You can also leave reviews on movies so others can see what you thought. As a non-user you can still search for movies and browse all the movies and comments. The admins are able to approve comments, delete comments, add/ edit/ delete movies in the database, delete and edit users. As an admin you can also make regular users admins.
 
-Live version:
+Live version: http://moviemesite.herokuapp.com/
 
 ## Built with
 
@@ -41,3 +41,12 @@ DB_PASSWORD=example
 8. Run "php artisan serve --host 0.0.0.0 --port 8000"
 9. Open the URL http://127.0.0.1:8000/ in the browser
 10. Done!
+
+---
+
+### Admin User to login
+
+Email: admin@test.se
+Password: admin1234'
+
+---
