@@ -23,7 +23,17 @@ class DatabaseSeeder extends Seeder
         Category::truncate();
         Movie::where('id', '>', 0)->delete();
 
+
+        //CREATE AN ADMIN USER
         
+        User::create([
+            'username' => 'Admin',
+            'name' => 'Admin',
+            'email' => 'admin@test.se',
+            'password' => 'admin1234',
+            'is_admin' => '1'
+        ]);
+
         //CREATE GENRE
         $action = Category::create([
             'name' => 'action',
