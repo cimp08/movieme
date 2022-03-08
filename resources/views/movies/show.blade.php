@@ -13,7 +13,7 @@
                     <h5 class="font-weight-bold pt-3">Overview</h5>
                     <p>{{$movie->body}}</p>
 
-                    <div class="d-flex">
+                    <div class="d-flex mb-3">
                         @auth
                         @if($watchlist->where('movie_id', $movie->id)->count())
                         <form method="POST" action="/movie/watchlist/delete">
@@ -43,7 +43,7 @@
                         @endauth
                      
 
-
+                        @auth
                         @if($lists)
                         <div class="dropdown">
                             <button class="btn btn-light d-flex align-items-center dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -70,6 +70,7 @@
                             </button>
                         </a>
                         @endif
+                        @endauth
                     </div>
                 </div>
             </div>
